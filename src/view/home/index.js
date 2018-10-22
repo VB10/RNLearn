@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import { Text, View, Button, StyleSheet, TouchableOpacity } from "react-native";
+import CustomText from "../component/text";
 
 export class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      val: "Main Text"
+    };
+  }
+
   render() {
     return (
       <View style={styles.view}>
         <Text style={styles.text}> ASDasdasd</Text>
         <TouchableOpacity
           onPress={() => {
-            alert("asdas");
+            alert(this.state.val);
+            this.setState({
+              val: "Change it!"
+            });
           }}
         >
-          <Text>sadassd</Text>
+          <CustomText detail="Detail of text" text="asdasd" />
         </TouchableOpacity>
       </View>
     );
