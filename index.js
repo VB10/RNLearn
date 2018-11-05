@@ -3,7 +3,7 @@
 import {
     AppRegistry
 } from "react-native";
-import App from "./src/view/lesson3/index";
+import App from "./src/view/nativeElements/index"
 import {
     name as appName
 } from "./app.json";

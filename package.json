@@ -7,8 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "native-base": "^2.8.1",
     "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.3"
+    "react-native": "0.57.3",
+    "react-native-elements": "^0.19.1"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
