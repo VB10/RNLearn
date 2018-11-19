@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text ,Button,TouchableOpacity } from 'react-native';
+import { View, Text, Button, TouchableOpacity } from 'react-native';
+import {Actions} from 'react-native-router-flux'   
 
 class Home1 extends Component {
   constructor(props) {
@@ -20,8 +21,13 @@ class Home1 extends Component {
     const { navigation } = this.props;
     return (
       <View>
-            <Text> Home1 </Text>
-          
+        <Text> Home1 </Text>
+
+        <TouchableOpacity onPress={() => {
+          Actions.homeDetail()
+        }}>
+          <Text>go next page</Text>
+          </TouchableOpacity>
       </View>
     );
   }
